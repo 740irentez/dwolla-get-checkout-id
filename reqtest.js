@@ -2,9 +2,7 @@ var request = require('request');
 
 var production = false;
 
-function callback (er, bd) {
-  console.log('help me callback');
-}
+
 
 function postResponse (error, res, body) {
     if (error) console.log('ERROR: ', error);
@@ -76,6 +74,8 @@ return function (context, callback) {
 return function (context, callback) {
   console.log('Sending new message to bot... ');
   
+  
+  
   var destinationId;
   var url;
   var client_id;
@@ -127,8 +127,8 @@ return function (context, callback) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
     
-    res.writeHead(200, { 'Content-Type': 'text/html '});
-    res.end('Hello ABBIE TTITIE');
-    callback(error, body);
+    //res.writeHead(200, { 'Content-Type': 'text/html '});
+    //res.end('Hello ABBIE TTITIE');
+    //callback(error, body);
   });
 };
