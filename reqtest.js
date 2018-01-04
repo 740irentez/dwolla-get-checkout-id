@@ -2,7 +2,7 @@ var request = require('request');
 
 var production = false;
 
-module.exports = function (context, callback) {
+module.exports = function (context, callback, res) {
 
 //return function (context, callback) {
   console.log('Sending new message to bot... ');
