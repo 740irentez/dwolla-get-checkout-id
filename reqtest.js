@@ -2,10 +2,10 @@ var request = require('request');
 
 var production = false;
 
-function callback (er, bd) {
+/*function callback (er, bd) {
   console.log(er);
   console.log(bd);
-}
+}*/
 
 module.exports = function (context, callback) {
 
