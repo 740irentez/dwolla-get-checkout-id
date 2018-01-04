@@ -13,7 +13,8 @@ function postResponse (error, res, body) {
     //res.writeHead(301, {
     //  Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
     //});
-    res.writeHead(200, { 'Content-Type': 'text/html '});
+    //res.writeHead(200, { 'Content-Type': 'text/html '});
+    res.writeHead(301, {Location: 'https://www.google.com'});
     res.end('Hello ABBIE TTITIE');
     callback(error, body);
 }
