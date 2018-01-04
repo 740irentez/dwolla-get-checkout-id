@@ -6,10 +6,10 @@ function postResponse (error, res, body) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
   
-    res.writeHead(301, {
-      Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
-    });    
-    res.end();
+    //res.writeHead(301, {
+    //  Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
+    //});    
+    //res.end();
     callback(error, body);
 }
 
