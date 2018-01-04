@@ -3,7 +3,7 @@ var request = require('request');
 var production = false;
 
 function callback (er, bd) {
-  console.log(er, bd);
+  console.log('help me callback');
 }
 
 function postResponse (error, res, body) {
