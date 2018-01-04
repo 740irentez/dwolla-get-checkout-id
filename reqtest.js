@@ -6,7 +6,7 @@ function callback() {
   console.log('what callback');
 }
 
-module.exports = function (context, callback, res) {
+module.exports = function (context, callback) {
 
 //return function (context, callback) {
   console.log('Sending new message to bot... ');
