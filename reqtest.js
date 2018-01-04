@@ -7,7 +7,7 @@ var production = false;
   console.log(bd);
 }*/
 
-module.exports = function (context, callback) {
+module.exports = function getCheckoutId(context, callback) {
 
 //return function (context, callback) {
   console.log('Sending new message to bot... ');
