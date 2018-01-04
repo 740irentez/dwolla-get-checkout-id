@@ -127,6 +127,8 @@ return function (context, callback) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
     
+    res.writeHead(200, { 'Content-Type': 'text/html '});
+    res.end('Hello ABBIE TTITIE');
     callback(error, body);
   });
 };
