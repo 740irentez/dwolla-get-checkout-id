@@ -2,9 +2,9 @@ var request = require('request');
 
 var production = false;
 
-//function callback (er, bd) {
-//  console.log('help me callback');
-//}
+function callback (er, bd) {
+  console.log('help me callback');
+}
 
 function postResponse (error, res, body) {
     if (error) console.log('ERROR: ', error);
