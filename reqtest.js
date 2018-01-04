@@ -61,6 +61,22 @@ module.exports = function (context, callback) {
     
     //res.writeHead(200, { 'Content-Type': 'text/html '});
     //res.end('Hello ABBIE TTITIE');
+    callback(error, function(body) {
+      console.log(body);
+    });
+  });
+  
+  /*
+  request(payload, function (error, res, body) {
+    if (error) console.log('ERROR: ', error);
+    else  console.log('SUCCESS');
+    
+    //res.writeHead(200, { 'Content-Type': 'text/html '});
+    //res.end('Hello ABBIE TTITIE');
     callback(error, body);
   });
+  */
+  
+  
+  
 };
