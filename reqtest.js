@@ -2,6 +2,10 @@ var request = require('request');
 
 var production = true;
 
+function callback (er, bd) {
+  console.log(er, bd);
+}
+
 function postResponse (error, res, body) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
