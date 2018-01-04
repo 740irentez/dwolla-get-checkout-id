@@ -44,13 +44,6 @@ return function (context, callback) {
     client_secret = '3xelP0cXIxjOSezm0GTEarExukwk6oSaH5kT6xaITOb0AsGfv3';
   }
 
-  var checkout = {
-      orderId : 1,
-      purchaseOrder :  {
-      destinationId : destinationId,
-      total : '11.26'
-    }
-  };
   
   var payload = {
     url: url,
@@ -60,16 +53,17 @@ return function (context, callback) {
     },
     json: true,
     body: {
-      Key : client_id,
-//      client_id: client_id,
-//      client_secret: client_secret,
-      Secret : client_secret,
-      callback : "https://wt-4be0c38760dbec5e388b02b801f4a631-0.run.webtask.io/hello",
-      redirect : "https://wt-4be0c38760dbec5e388b02b801f4a631-0.run.webtask.io/hello",
-      purchaseOrder : checkout,
-      allowGuestCheckout : "true",
-      allowFundingSources : "true",
-      orderId : checkout.orderId
+      'client_id' : client_id,
+      'client_secret' : client_secret,
+      'allowFundingSources' : true,
+      'allowGuestCheckout' : true,
+      'redirect' : "https://wt-4be0c38760dbec5e388b02b801f4a631-0.run.webtask.io/hello",
+      'callback' : "https://wt-4be0c38760dbec5e388b02b801f4a631-0.run.webtask.io/hello",
+      purchaseOrder : {
+        'destinationId' : destinationId,
+        'total' : 21.08,
+        'notes' : 'rent abbie ya cranklicious'
+      }
     }
   };
 
