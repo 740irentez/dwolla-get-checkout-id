@@ -7,10 +7,7 @@ var production = false;
   console.log(bd);
 }*/
 
-getCheckoutId(function(error, body) {
-  console.log(error);
-  console.log(body);
-});
+
 
 module.exports = function getCheckoutId(context, callback) {
 
