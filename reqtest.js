@@ -13,7 +13,7 @@ function postResponse (error, res, body) {
     //res.writeHead(301, {
     //  Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
     //});    
-    //res.end();
+    res.end();
     callback(error, body);
 }
 /*
