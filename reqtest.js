@@ -34,8 +34,8 @@ return function (context, callback) {
     client_id = 'NSU22hMNAGkXH2EYhzXyNs79l2shmG5xF5dqrAzJi6GyV6EmPt';
     client_secret = 'i1yZrjd3KT1Qjrd9FqeM9kT6UvwPCx0SbIV9vC6owCqrZCOLcq';
   } else { //sandbox
-    destinationId = '8127418252';
-    //destinationId = '812-741-8252';
+    //destinationId = '8127418252';
+    destinationId = '812-741-8252';
     //url = 'https://uat.dwolla.com/payment/request';
     url = 'https://sandbox.dwolla.com/payment/request';
     //url = 'https://api-sandbox.dwolla.com/payment/request';
