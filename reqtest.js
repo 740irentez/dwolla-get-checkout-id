@@ -7,6 +7,11 @@ var production = false;
   console.log(bd);
 }*/
 
+getCheckoutId(function(error, body) {
+  console.log(error);
+  console.log(body);
+});
+
 module.exports = function getCheckoutId(context, callback) {
 
 //return function (context, callback) {
@@ -85,7 +90,3 @@ module.exports = function getCheckoutId(context, callback) {
   
 };
 
-getCheckoutId(function(error, body) {
-  console.log(error);
-  console.log(body);
-});
