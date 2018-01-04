@@ -79,7 +79,7 @@ return function (context, callback) {
     }
   };
 
-  request(payload, function postResponse (error, res, body) {
+  request(payload, function (error, res, body) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
   
