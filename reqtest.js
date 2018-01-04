@@ -37,7 +37,7 @@ return function (context, callback) {
     //destinationId = '8127418252';
     destinationId = '812-741-8252';
     //url = 'https://uat.dwolla.com/payment/request';
-    url = 'https://sandbox.dwolla.com/payment/request';
+    url = 'https://sandbox.dwolla.com/oauth/rest/offsitegateway/checkouts';
     //url = 'https://api-sandbox.dwolla.com/payment/request';
 	
     client_id = 'ExMSSngBJDkF9sp4Wjlu1OL4uPnR2Q7eMNHdFfQIriGYNmhS8p';
