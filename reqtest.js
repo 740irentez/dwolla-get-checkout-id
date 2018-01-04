@@ -72,7 +72,7 @@ return function (context, callback) {
     res.writeHead(301, {
       Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
     });    
-
+    res.end();
     callback(error, body);
   });
 };
