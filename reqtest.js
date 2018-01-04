@@ -2,9 +2,9 @@ var request = require('request');
 
 var production = false;
 
-function callback (er, bd) {
-  console.log('help me callback');
-}
+//function callback (er, bd) {
+//  console.log('help me callback');
+//}
 
 function postResponse (error, res, body) {
     if (error) console.log('ERROR: ', error);
@@ -16,7 +16,7 @@ function postResponse (error, res, body) {
     //res.end();
     callback(error, body);
 }
-
+/*
 return function (context, callback) {
   console.log('Sending new message to bot... ');
   
@@ -69,8 +69,9 @@ return function (context, callback) {
 
   request(payload, postResponse);
 };
+*/
 
-/*return function (context, callback) {
+return function (context, callback) {
   console.log('Sending new message to bot... ');
   
   var destinationId;
@@ -127,4 +128,3 @@ return function (context, callback) {
     callback(error, body);
   });
 };
-*/
