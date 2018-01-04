@@ -80,6 +80,7 @@ module.exports = function getCheckoutId(context, callback) {
     //res.writeHead(200, { 'Content-Type': 'text/html '});
     //res.end('Hello ABBIE TTITIE');
     callback(error, body);
+    console.log(callback.toString());
   });
   
   
