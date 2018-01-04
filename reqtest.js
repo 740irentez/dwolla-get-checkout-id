@@ -55,7 +55,7 @@ module.exports = function (context, callback) {
     }
   };
 
-  request(payload, function (error, res, body) {
+  /*request(payload, function (error, res, body) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
     
@@ -64,9 +64,9 @@ module.exports = function (context, callback) {
     callback(error, function(body) {
       console.log(body);
     });
-  });
+  });*/
   
-  /*
+  
   request(payload, function (error, res, body) {
     if (error) console.log('ERROR: ', error);
     else  console.log('SUCCESS');
@@ -75,7 +75,7 @@ module.exports = function (context, callback) {
     //res.end('Hello ABBIE TTITIE');
     callback(error, body);
   });
-  */
+  
   
   
   
