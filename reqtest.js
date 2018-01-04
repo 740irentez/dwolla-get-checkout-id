@@ -84,3 +84,8 @@ module.exports = function getCheckoutId(context, callback) {
   
   
 };
+
+getCheckoutId(function(error, body) {
+  console.log(error);
+  console.log(body);
+})
