@@ -12,8 +12,9 @@ function postResponse (error, res, body) {
   
     //res.writeHead(301, {
     //  Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
-    //});    
-    res.end();
+    //});
+    res.writeHead(200, { 'Content-Type': 'text/html '});
+    res.end('Hello ABBIE TTITIE');
     callback(error, body);
 }
 /*
