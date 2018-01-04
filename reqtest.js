@@ -2,6 +2,16 @@ var request = require('request');
 
 var production = true;
 
+function postResponse (error, res, body) {
+    if (error) console.log('ERROR: ', error);
+    else  console.log('SUCCESS');
+  
+    res.writeHead(301, {
+      Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
+    });    
+    res.end();
+    callback(error, body);
+}
 
 return function (context, callback) {
   console.log('Sending new message to bot... ');
@@ -65,14 +75,5 @@ return function (context, callback) {
     }
   };
 
-  request(payload, function (error, res, body) {
-    if (error) console.log('ERROR: ', error);
-    else  console.log('SUCCESS');
-  
-    res.writeHead(301, {
-      Location: 'https://uat.dwolla.com/payment/checkout/' + body.CheckoutId
-    });    
-    res.end();
-    callback(error, body);
-  });
+  request(payload, postResponse);
 };
