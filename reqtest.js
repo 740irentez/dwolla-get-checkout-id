@@ -52,12 +52,6 @@ return function (context, callback) {
     }
   };
   
-  var checkoutStringified = JSON.stringify(checkout);
-  
-	//var url = 'https://api-sandbox.dwolla.com/payment/request';
-	
-  //var url = 'https://api-sandbox.dwolla.com/oauth/rest/offsitegateway/checkout';
-
   var payload = {
     url: url,
     method: 'POST',
