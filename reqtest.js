@@ -1,6 +1,6 @@
 var request = require('request');
 
-var production = false;
+var production = true;
 
 /*function callback (er, bd) {
   console.log(er);
